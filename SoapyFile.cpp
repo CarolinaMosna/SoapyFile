@@ -86,7 +86,7 @@ int SoapyFile::readStream (SoapySDR::Stream *stream, void *const *buffs, const s
 {
     // Prepara la salida
     float *out = (float *)buffs[0];
-    size_t numberOfComplexSamples = numElems * 2; // Duploca el número de muestras dada la naturaleza compleja de las mismas
+    size_t numberOfComplexSamples = numElems * 2; // Duplica el número de muestras dada la naturaleza compleja de las mismas
     size_t bytesAsked = numberOfComplexSamples * sizeof(float); // Calcula la cantidad de bytes pedida desde la última lectura (donde quedó el puntero)
 
     // Maneja un residual en caso de que la lectura del pipe se corte antes de su finalización (verifica que no hayan faltantes)
