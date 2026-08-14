@@ -239,6 +239,7 @@ SoapySDR::RangeList SoapyFile::getBandwidthRange (const int direction, const siz
 /***********************************************************************
  * Find available devices
  **********************************************************************/
+// Busca un driver llamado "File"
 static SoapySDR::KwargsList findFile(const SoapySDR::Kwargs &args)
 {
     SoapySDR::KwargsList results;
